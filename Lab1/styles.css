@@ -1,5 +1,6 @@
 body {
     width: 50vw;
-    text-align: center;
+    text-align: left;
     margin: auto;
+    margin-top: 10px;
 }
