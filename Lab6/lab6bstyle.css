@@ -36,6 +36,11 @@ body {
     margin-top: 20px;
 }
 
+.blockContent img{
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
 #leftBlock1{
     float: left;
     width: 70%;
@@ -50,4 +55,22 @@ body {
 #foot{
     clear: both;
     text-align: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px){
+    #leftBlock1, #rightBlock1{
+        width: 100%;
+    }
+    #rightBlock1{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:300px) {
+    #navBar a{
+        float: none !important;
+    }
+    .blockContent img{
+        width: 100%;
+    }
 }
