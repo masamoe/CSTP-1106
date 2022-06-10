@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#head {
+    text-align: center;
+}
+
+#navBar {
+    background-color: black;
+    overflow: hidden;
+}
+
+#navBar a {
+    display: block;
+    float: left;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+}
+
+#navBar a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.blockContent{
+    
+}
+
+#leftBlock1{
+    
+}
