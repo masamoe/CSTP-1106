@@ -31,9 +31,23 @@ body {
 }
 
 .blockContent{
-    
+    background-color: rgb(158, 176, 194);
+    padding: 10px;
+    margin-top: 20px;
 }
 
 #leftBlock1{
-    
+    float: left;
+    width: 70%;
+}
+
+#rightBlock1{
+    float: right;
+    width: 30%;
+    padding-left: 15px;
+}
+
+#foot{
+    clear: both;
+    text-align: center;
 }
