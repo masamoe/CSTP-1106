@@ -1,0 +1,23 @@
+#addStyle {
+    background-color: #d6cbd3;
+    margin: 10px;
+    font-size: large;
+}
+
+#subStyle {
+    background-color: #eca1a6;
+    margin: 10px;
+    font-size: large;
+}
+
+#diviStyle {
+    background-color: #bdcebe;
+    margin: 10px;
+    font-size: large;
+}
+
+#multStyle {
+    background-color: #ada397;
+    margin: 10px;
+    font-size: large;
+}
