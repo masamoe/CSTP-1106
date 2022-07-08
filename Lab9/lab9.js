@@ -1,5 +1,5 @@
 function process(data) {
-    $("#z").html(`Temp: ${JSON.stringify(data.main.temp)}°C     Weather: ${JSON.stringify(data.weather[0].description)}`);
+    $("#z").html(`Temp: ${JSON.stringify(data.main.temp)}°C Weather: ${JSON.stringify(data.weather[0].description)}`);
 };
 
 function runAjax() {
