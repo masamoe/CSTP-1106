@@ -22,6 +22,7 @@ function getBackdrop(input) {
 };
 
 function runAjax() {
+    $("#articleRight").empty()
     let movie = $("#movie").val();
     $.ajax({
         url: `https://api.themoviedb.org/3/search/movie?api_key=42e3d35339df1546acf0bbc6eb2c945e&query=${movie}`,
