@@ -1,0 +1,20 @@
+#articleLeft {
+    width: 50%;
+    float: left;
+}
+
+#articleLeft img {
+    width: 100%
+}
+
+#articleRight {
+    width: 50%;
+    float: right;
+}
+
+#articleRight img {
+    max-width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
