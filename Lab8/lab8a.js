@@ -2,7 +2,8 @@ function calculate(op) {
     console.log("calculate() got called");
     const x = parseInt(jQuery("#x").val());
     const y = parseInt(jQuery("#y").val());
-    const hideButton = "<button id='hide' onclick='hide()'>Hide</button>"
+    const hideButton = "<button id='hide' onclick='hide(this)'>Hide</button>"
+    const historyAppend = (operation, result) => $("#history").append(`<article><span id='${operation}'>${result} ${hideButton}</span><br></article>`);
 
     if (Number.isInteger(x) && Number.isInteger(y)) {
         switch (op) {
@@ -10,32 +11,32 @@ function calculate(op) {
                 console.log("add");
                 result = `${x} + ${y} = ${x+y}`;
                 $("#result").html(result);
-                $("#history").append("<span id='addStyle'>"+`${result}`+hideButton+"</span>"+"<br>");
+                historyAppend("addStyle", result);
             break;
             case "-":
                 console.log("sub");
                 result = `${x} - ${y} = ${x-y}`;
                 $("#result").html(result);
-                $("#history").append("<span id='subStyle'>"+`${result}`+hideButton+"</span>"+"<br>");
+                historyAppend("subStyle", result);
             break;
             case "*":
                 console.log("divi");
                 result = `${x} / ${y} = ${x/y}`;
                 $("#result").html(result);
-                $("#history").append("<span id='diviStyle'>"+`${result}`+hideButton+"</span>"+"<br>");
+                historyAppend("diviStyle", result);
             break;
             case "/":
                 console.log("mult");
                 result = `${x} * ${y} = ${x*y}`;
                 $("#result").html(result);
-                $("#history").append("<span id='multStyle'>"+`${result}`+hideButton+"</span>"+"<br>");
+                historyAppend("multStyle", result);
             break;
         };
     };
 };
 
-function hide() {
-    $("#history").empty();
+function hide(input) {
+    $(input).parent().parent().remove();
 };
 
 function setup(){
