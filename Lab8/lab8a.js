@@ -2,7 +2,8 @@ function calculate(op) {
     console.log("calculate() got called");
     const x = parseInt(jQuery("#x").val());
     const y = parseInt(jQuery("#y").val());
-    const hideButton = "<button class='hide'>Hide</button>"
+    const hideButton = "<button id='hide' onclick='hide()'>Hide</button>"
+
     if (Number.isInteger(x) && Number.isInteger(y)) {
         switch (op) {
             case "+":
@@ -34,7 +35,7 @@ function calculate(op) {
 };
 
 function hide() {
-    $(this).parent().remove();
+    $("#history").empty();
 };
 
 function setup(){
