@@ -1,0 +1,27 @@
+#articleLeft {
+    width: 50%;
+    float: left;
+}
+
+#articleLeft img {
+    width: 100%
+}
+
+#pages {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#articleRight {
+    width: 50%;
+    float: right;
+}
+
+#articleRight img {
+    clear: both;
+    max-width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+

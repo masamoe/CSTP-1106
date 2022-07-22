@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="A3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="A3.js"></script>
+</head>
+<body>
+    <article id="articleLeft">
+
+        <a href="../Index.html" style="float:right">Home</a>
+        
+
+        Please enter a movie:
+        <input type="text" id="movie">
+        <button id="search">Search!</button>
+        <br>
+        Page Size:
+        <select name="pageSize" id="pageSize" onchange="runAjax()">
+            <option value="3" selected>3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+
+        <div id="pages"></div>
+
+        <div id="result"></div>
+    
+    </article>
+    <article id="articleRight">
+
+    </article>
+
+</body>
+</html>
