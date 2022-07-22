@@ -1,11 +1,6 @@
 let pageID = 1
 let pageSize = 3
 
-function gotoPage(page) {
-    pageID = parseInt(page.getAttribute("id"));
-    runAjax();
-}
-
 function process(data) {
     let movies = data.results
     const list = [];
@@ -33,7 +28,10 @@ function getBackdrop(input) {
     $("#articleRight").html(`<img src="https://image.tmdb.org/t/p/original${id}" alt="">`);
 };
 
-
+function gotoPage(page) {
+    pageID = parseInt(page.getAttribute("id"));
+    runAjax();
+};
 
 function runAjax() {
     $("#articleRight").empty()
@@ -47,8 +45,16 @@ function runAjax() {
     });
 };
 
+function reset() {
+    $("#articleRight").empty();
+    $("#result").empty();
+    $("#pages").empty();
+    pageID = 1;
+    runAjax();
+};
+
 function setup() {
-    $("#search").click(runAjax);
+    $("#search").click(reset);
 };
 
 $(document).ready(setup);
