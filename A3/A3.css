@@ -1,10 +1,15 @@
 #articleLeft {
     width: 50%;
+    min-height: max-content;
     float: left;
 }
 
 #articleLeft img {
     width: 100%
+}
+
+#articleLeft button {
+    margin: 5px;
 }
 
 #pages {
@@ -14,6 +19,7 @@
 
 #articleRight {
     width: 50%;
+    min-height: max-content;
     float: right;
 }
 
@@ -25,3 +31,11 @@
     margin-right: 5%;
 }
 
+#footer a {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+    background-color: lightgrey;
+    padding: 2%;
+    display: block;
+}
