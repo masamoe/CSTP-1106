@@ -1,29 +1,15 @@
-grade = 95
-
-if(grade >= 90){
-    console.log("A+")
+function drop_func() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
-else{
-    if(grade >= 80){
-        console.log("B+")
-    }
-    else{
-        if(grade >= 70){
-            console.log("C+")
-        }
-        else{
-            if(grade >=60){
-                console.log("D")
-            }
-            else{
-                if(grade >= 50){
-                    console.log("E")
-                }
-                else{
-                    if(grade < 50){
-                        console.log("F")
-                    }
-                }
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
             }
         }
     }
