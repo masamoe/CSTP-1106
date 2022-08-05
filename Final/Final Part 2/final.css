@@ -1,0 +1,35 @@
+#articleLeft {
+    width: 100%;
+    min-height: max-content;
+    float: left;
+}
+
+#articleLeft img {
+    width: 100%
+}
+
+#articleLeft button {
+    margin: 5px;
+}
+
+#pages {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#articleRight img {
+    clear: both;
+    max-width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#footer a {
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+    background-color: lightgrey;
+    padding: 2%;
+    display: block;
+}
